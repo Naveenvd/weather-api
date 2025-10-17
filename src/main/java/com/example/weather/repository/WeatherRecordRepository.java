@@ -9,6 +9,5 @@ public interface WeatherRecordRepository extends JpaRepository<WeatherRecord,Lon
 {
     List<WeatherRecord> findByMonth(int month);
     List<WeatherRecord> findByYearAndMonth(int year,int month);
-    List<WeatherRecord> findByYear(int year);
     List<WeatherRecord> findByDayAndMonth(int day, int month);
 }
